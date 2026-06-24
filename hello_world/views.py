@@ -9,7 +9,6 @@ msg = "Hello World!"
 
 @app.route('/')
 def index():
-    raise RuntimeError("Intentional CI failure")
     output = request.args.get('output')
     if not output:
         output = PLAIN
